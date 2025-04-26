@@ -1,0 +1,44 @@
+[
+    {
+      "name": "Maui VA Outpatient Clinic",
+      "address": "203 Hoohana St #303, Kahului, HI 96732",
+      "phone": "808-242-8557",
+      "map_link": "https://maps.app.goo.gl/AnCFVXtE7ZevhaF47",
+      "image": "/static/images/maui-outpatient.jpg"
+    },
+    {
+      "name": "Hilo VA Outpatient Clinic",
+      "address": "Professional Building, 45 Mohouli St, Hilo, HI 96720",
+      "phone": "808-969-3833",
+      "map_link": "https://maps.app.goo.gl/2YS7WmWsgohkFq757",
+      "image": "/static/images/hilo-outpatient.png"
+    },
+    {
+      "name": "Lihue VA Outpatient Clinic",
+      "address": "4473 Pahe'e St, Lihue, HI 96766",
+      "phone": "808-246-1163",
+      "map_link": "https://www.google.com/maps?q=4485+Pahe'e+Street+Lihue,+HI+96765",
+      "image": "/static/images/lihue-outpatient.jpg"
+    },
+    {
+      "name": "Molokai VA Community-Based Outpatient Clinic",
+      "address": "123 Example St, Molokai, HI 96748",
+      "phone": "808-123-4567",
+      "map_link": "https://maps.example.com/molokai",
+      "image": "/static/images/molokai-outpatient.jpg"
+    },
+    {
+      "name": "Kona Community-Based Outpatient Clinic",
+      "address": "73-4976 Kamanu St, Kailua-Kona, HI 96740",
+      "phone": "808-329-0574",
+      "map_link": "https://www.google.com/maps?q=73-4976+Kamanu+St,+Kailua-Kona,+HI+96740",
+      "image": "/static/images/kona-outpatient.jpg"
+    },
+    {
+      "name": "Leeward Community-Based Outpatient Clinic",
+      "address": "91-2139 Fort Weaver Rd, Ewa Beach, HI 96706",
+      "phone": "808-458-5084",
+      "map_link": "https://www.google.com/maps?q=91-2139+Fort+Weaver+Rd,+Ewa+Beach,+HI+96706",
+      "image": "/static/images/ewabeach-outpatient.jpg"
+    }
+  ]

@@ -1,0 +1,11 @@
+[
+    {
+      "name": "Spark M. Matsunaga VA Medical Center",
+      "address": "459 Patterson Road, Honolulu, HI 96819-1522",
+      "phone": "800-214-1306",
+      "mental_health_phone": "800-214-1306",
+      "va_health_connect": "833-983-0487",
+      "map_link": "https://www.google.com/maps?q=459+Patterson+Road,+Honolulu,+HI+96819-1522",
+      "image": "/static/images/va-medicalcenter.jpg"
+    }
+]
