@@ -1,56 +1,150 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
-  }
-  
-  header {
-    background-color: #003366;
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: #004080;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  nav a:hover {
-    background-color: #0059b3;
-  }
-  
-  main {
-    padding: 2rem;
-    text-align: left;
-  }
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+    }
 
-  .responsive-img {
-    max-width: 80%;
-    height: auto;
-    display: block;
-    margin: 1.5rem auto;
-    border-radius: 8px;
-  }
-  
-  footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #004080;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #0059b3;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1.5rem auto;
+      border-radius: 8px;
+
+    }
+
+    /* Small image */
+    .img-small {
+      max-width: 50%;
+      /* Adjust size as needed */
+    }
+
+    /* Medium image */
+    .img-medium {
+      max-width: 75%;
+      /* Adjust size as needed */
+    }
+
+    /* Large image */
+    .img-large {
+      max-width: 100%;
+      /* Adjust size as needed */
+
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #about,
+    #veterans-medical-center,
+    #veteran-clinic,
+    #outpatient-care {
+      display: none;
+      /* Hide by default */
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      text-align: left;
+      line-height: 1.6;
+      background-color: #e6f0ff;
+      /* Soft background color */
+      border-radius: 8px;
+      /* Rounded corners */
+    }
+
+    #about h3,
+    #veterans-medical-center h3,
+    #veteran-clinic h3,
+    #outpatient-care h3 {
+      color: #003366;
+      margin-top: 1.5rem;
+    }
+
+    #about ul,
+    #veterans-medical-center ul,
+    #veteran-clinic ul,
+    #outpatient-care ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
+
+    #about p,
+    #veterans-medical-center p,
+    #veteran-clinic p,
+    #outpatient-care p {
+      margin-bottom: 1rem;
+    }
+
+    #about i,
+    #veterans-medical-center i,
+    #veteran-clinic i,
+    #outpatient-care i {
+      font-size: 1.1rem;
+      color: #004080;
+      font-style: italic;
+    }
+
+    /* Hide 'Welcome, Veterans' by default */
+    .welcome-text {
+      display: none;
+    }
+
+    /* Show it only on the homepage */
+    body.home .welcome-text {
+      display: block;
+    }
+
+    body.home {
+        background-image: url('images/va-medical.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+      }
+      
+      body.home main {
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 2rem;
+        border-radius: 8px;
+        color: white; 
+      }

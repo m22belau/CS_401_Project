@@ -1,154 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hawaii Veterans Resource</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f8ff;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #004080;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      display: block;
-    }
-    nav a:hover {
-      background-color: #0059b3;
-    }
-    main {
-      padding: 2rem;
-      text-align: center;
-  
-    }
-    .responsive-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1.5rem auto;
-    border-radius: 8px;
-  } 
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-
-    #about, #veterans-medical-center, #veteran-clinic {
-      display: none; /* Hide by default */
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 800px;
-      text-align: left;
-      line-height: 1.6;
-      background-color: #e6f0ff;  /* Soft background color */
-      border-radius: 8px;  /* Rounded corners */
-    }
-    #about h3, #veterans-medical-center h3, #veteran-clinic h3 {
-      color: #003366;
-      margin-top: 1.5rem;
-    }
-    #about ul, #veterans-medical-center ul, #veteran-clinic ul {
-      list-style-type: disc;
-      margin-left: 2rem;
-    }
-    #about p, #veterans-medical-center p, #veteran-clinic p {
-      margin-bottom: 1rem;
-    }
-    #about i, #veterans-medical-center i, #veteran-clinic i {
-      font-size: 1.1rem;
-      color: #004080;
-      font-style: italic;
-    }
-    
-    /* Hide 'Welcome, Veterans' by default */
-.welcome-text {
-    display: none;
+<style>
+body.home {
+  background-image: url('images/va-medical.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
 }
 
-/* Show it only on the homepage */
-body.home .welcome-text {
-    display: block;
+body.home main {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 2rem;
+  border-radius: 8px;
+  color: white; 
 }
 
-  </style>
+</style>
 
-    <title>Bootstrap App</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap Bundle JS (includes Popper.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Bootstrap App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Bundle JS (includes Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
 
+<body class="home">
   <header>
     <h1>Hawaii Veterans Resource Center</h1>
     <p>Supporting Hawaii's Veterans with Accessible Medical and Support Services</p>
   </header>
 
   <nav>
-    <a href="#" id="home-tab" aria-label="Home">Home</a>
-    <a href="#veterans-medical-center" id="medical-center-tab" aria-label="Veterans Medical Center">Veterans Medical Center</a>
-    <a href="#" aria-label="Outpatient Care Facilities">Outpatient Care Facilities</a>
+    <a href="#home" id="home-tab" aria-label="Home">Home</a>
+    <a href="#veterans-medical-center" id="medical-center-tab" aria-label="Veterans Medical Center">Veterans Medical
+      Center</a>
+    <a href="#outpatient-care" id="outpatient-tab" aria-label="Outpatient Care Facilities">Outpatient Care
+      Facilities</a>
     <a href="#veteran-clinic" id="clinic-tab">Veteran Clinics</a>
     <a href="#about" id="about-tab" aria-label="About">About</a>
-  </nav>  
+  </nav>
 
   <main>
     <h2>Welcome, Veterans</h2>
     <p>Use this site to navigate healthcare services available to veterans across Hawaii.</p>
     <p>Select a category above to get started.</p>
-    <figure>
-     <img src="va-medical.jpg" alt="VA Pacific Islands Health Care Center" class="responsive-img"/>
-    </figure>
-      
-  </main>
 
-<!-- Veterans Medical Center section -->
-<section id="veterans-medical-center">
+  </main>
+</body>
+
+  <!-- Veterans Medical Center section -->
+  <section id="veterans-medical-center">
     <h2>Veterans Medical Center in Hawaii</h2>
-    <p>We are proud to support veterans through the VA Pacific Islands Health Care System, Spark M. Matsunaga Department of Veterans Affairs Medical Center.</p>
-    <h3>Contact Information:</h3>
+    <p>Veteran Medical Centers are full-service hospitals that provide a wide range of health services including 
+    <strong>inpatient care, surgery, emergency services, and specialized treatment for chronic conditions.</strong> 
+    These are the primary hubs for veteran healthcare, offering both <strong>short-term and long-term</strong> medical support.</p>
+    <p>We are proud to support veterans through the VA Pacific Islands Health Care System, Spark M. Matsunaga Department
+      of Veterans Affairs Medical Center.</p>
+      <img src="images/va-medicalcenter.jpg" alt="VA Pacific Islands Health Care Center" class="responsive-img img-medium" />
+    
+      <h3>Contact Information:</h3>
     <ul>
       <li><strong>Address:</strong> 459 Patterson Road, Honolulu, HI 96819-1522</li>
-      <li><strong>Get Directions:</strong> <a href="https://www.google.com/maps?q=459+Patterson+Road,+Honolulu,+HI+96819-1522" target="_blank">Google Maps</a></li>
+      <li><strong>Get Directions:</strong> <a
+          href="https://www.google.com/maps?q=459+Patterson+Road,+Honolulu,+HI+96819-1522" target="_blank">Google
+          Maps</a></li>
       <li><strong>Main Phone:</strong> <a href="tel:+18002141306">800-214-1306</a></li>
       <li><strong>VA Health Connect:</strong> <a href="tel:+18339830487">833-983-0487</a></li>
       <li><strong>Mental Health Phone:</strong> <a href="tel:+18002141306">800-214-1306</a></li>
     </ul>
+
     <h3>Services Offered:</h3>
     <ul>
       <li>Primary Care</li>
@@ -157,14 +92,107 @@ body.home .welcome-text {
       <li>Rehabilitation Services</li>
       <li>Emergency Services</li>
     </ul>
-    <p>For more detailed information, please contact the Spark M. Matsunaga Department of Veterans Affairs Medical Center directly.</p>
-</section>
+    <p>For more detailed information, please contact the Spark M. Matsunaga Department of Veterans Affairs Medical
+      Center directly.</p>
+  </section>
 
-<!-- Veteran Clinics section -->
-<section id="veteran-clinic">
-    <h2>Veteran Clinics in Hawaii</h2>
-    <p>The Veteran Clinics across Hawaii provide comprehensive healthcare and support services to veterans in various locations.</p>
+
+  <!-- Outpatient Care Facilities section -->
+  <section id="outpatient-care">
+    <h2>Outpatient Care Facilities in Hawaii</h2>
+    <p>Outpatient care facilities provide <strong>non-emergency medical services that don't require an overnight stay.</strong> 
+      These include diagnostic tests, minor procedures, physical therapy, mental health services, and follow-up appointments. 
+      Unlike full-service medical centers that offer inpatient care and emergency services, or clinics that focus on quick, 
+      routine care, outpatient facilities bridge the gap — <strong>offering specialized treatments and ongoing care while letting 
+      veterans return home the same day.</strong></p>
+
+      <p>Community-Based Outpatient Clinics (CBOCs) offer primary care, mental health services, and routine 
+      lab work in convenient, local settings. These clinics are designed to bring essential VA healthcare closer to veterans
+       living in rural or underserved areas, <strong>reducing the need for long travel to larger medical centers.</strong></p>
+
+    <h3>Outpatient Care Locations:</h3>
+    <ul>
+      
+      <li><strong>Maui:</strong> Maui VA Outpatient Clinic</li>
+      <li><strong>Hilo:</strong> Hilo VA Outpatient Clinic</li>
+      <li><strong>Lihue:</strong> Lihue VA Outpatient Clinic</li>
+      <li><strong>Molokai:</strong> Molokai VA Community-Based Outpatient Clinic</li>
+      <li><strong>Kona:</strong> Kona Community-Based Outpatient Clinic</li>
+      <li><strong>Ewa:</strong> Leeward Community-Based Outpatient Clinic</li>
+     
+    </ul>
+
+    <h3>Contact Information:</h3>
+    <ul>
+          
+
+      <!-- Maui VA Outpatient Clinic -->
+       <img src="images/maui-outpatient.jpg" alt="Maui VA Outpatient Clinic" class="responsive-img img-medium" />
+      <li><strong>Maui VA Outpatient Clinic:</strong> 203 Hoohana St #303, Kahului, HI 96732</li>
+      <li>Direct Line: <a href="tel:+18082428557">808-242-8557</a></li>
+      <li><a href="https://maps.app.goo.gl/AnCFVXtE7ZevhaF47" target="_blank">Get directions on
+          Google Maps</a></li>
+
+
+      <!-- Hilo VA Outpatient Clinic -->
+       <img src="images/hilo-outpatient.png" alt="Hilo VA Outpatient Clinic" class="responsive-img img-medium" />
+      <li><strong>Hilo VA Outpatient Clinic:</strong> Professional Building, 45 Mohouli St, Hilo, HI 96720</li>
+      <li>Direct Line: <a href="tel:+18089693833">808-969-3833</a></li>
+      <li><a href="https://maps.app.goo.gl/2YS7WmWsgohkFq757" target="_blank">Get directions on
+          Google Maps</a></li>
+
+      <!-- Lihue VA Outpatient Clinic -->
+        <img src="images/lihue-outpatient.jpg" alt="Lihue VA Outpatient Clinic" class="responsive-img img-medium" />
+      <li><strong>Lihue VA Outpatient Clinic:</strong> 4473 Pahe'e St, Lihue, HI 96766</li>
+      <li>Direct Line: <a href="tel:+18082461163">808-246-1163</a></li>
+      <li><a href="https://www.google.com/maps?q=4485+Pahe'e+Street+Lihue,+HI+96765" target="_blank">Get directions on
+          Google Maps</a></li>
+
+
+
+      <!-- Molokai VA Community-Based Outpatient Clinic -->
+      <img src="images/molokai-outpatient.jpg" alt="Molokai VA Outpatient Clinic" class="responsive-img img-large" /> 
+      <li><strong>Molokai VA Outpatient Clinic:</strong> 280 Home Olu Pl, Kaunakakai, HI 96748</li>
+      <li>Direct Line: <a href="tel:+18082461163">808-246-1163</a></li>
+      <li><a href="https://maps.app.goo.gl/VChMN4qn1gW8FHxQ9" target="_blank">Get directions on
+          Google Maps</a></li>
+
     
+
+      <!-- Kona Community-Based Outpatient Clinic -->
+      <img src="images/kona-outpatient.jpg" alt="Kona Community-Based Outpatient Clinic" class="responsive-img img-medium" />
+      <li><strong>Kona Community-Based Outpatient Clinic:</strong> 73-4976 Kamanu St, Kailua-Kona, HI 96740</li>
+      <li>Direct Line: <a href="tel:+18083290574">808-329-0574</a></li>
+      <li><a href="https://www.google.com/maps?q=73-4976+Kamanu+St,+Kailua-Kona,+HI+96740" target="_blank">Get
+          directions on Google Maps</a></li>
+
+
+      <!-- Leeward Community-Based Outpatient Clinic -->
+      <img src="images/ewabeach-outpatient.jpg" alt="Leeward Community-Based Outpatient Clinic" class="responsive-img img-medium" />
+      <li><strong>Leeward Community-Based Outpatient Clinic:</strong> 91-2139 Fort Weaver Rd, Ewa Beach, HI 96706</li>
+      <li>Direct Line: <a href="tel:+18084585084">808-458-5084</a></li>
+      <li><a href="https://www.google.com/maps?q=91-2139+Fort+Weaver+Rd,+Ewa+Beach,+HI+96706" target="_blank">Get
+          directions on Google Maps</a></li>
+
+
+
+    </ul>
+
+    <h3>Services Offered:</h3>
+    <ul>
+      <li>Primary Care</li>
+      <li>Mental Health Services</li>
+      <li>Specialist Referrals</li>
+      <li>Rehabilitation Services</li>
+    </ul>
+  </section>
+
+  <!-- Veteran Clinics section -->
+  <section id="veteran-clinic">
+    <h2>Veteran Clinics in Hawaii</h2>
+    <p>Veteran Clinics are smaller, community-based locations that provide routine care like checkups, immunizations, 
+      and preventive screenings. They're designed for quick visits, <strong>making care more accessible for veterans closer to home.</strong></p>
+
     <h3>Veteran Clinic Locations:</h3>
     <ul>
       <li><strong>Hilo:</strong> Hilo Vet Center</li>
@@ -172,40 +200,47 @@ body.home .welcome-text {
       <li><strong>Kahului:</strong> Maui Vet Center</li>
       <li><strong>Kailua-Kona:</strong> Kona Vet Center</li>
       <li><strong>Kapolei:</strong> West Oahu Vet Center</li>
-      <li><strong>Lihue:</strong> Kauai Vet Center</li>
+     
     </ul>
 
     <h3>Contact Information:</h3>
     <ul>
+
       <!-- Hilo Vet Center -->
+      <img src="images/hilo-vaclinic.jpg" alt="Hilo Vet Center" class="responsive-img img-medium" />
       <li><strong>Hilo Vet Center:</strong> 70 Lanihuli Street, Suite 102, Hilo, HI 96720</li>
       <li>Direct Line: <a href="tel:+18089693833">808-969-3833</a></li>
-      <li><a href="https://www.google.com/maps?q=70+Lanihuli+Street+Hilo,+HI+96720" target="_blank">Get directions on Google Maps</a></li>
-      
+      <li><a href="https://www.google.com/maps?q=70+Lanihuli+Street+Hilo,+HI+96720" target="_blank">Get directions on
+          Google Maps</a></li>
+
       <!-- Honolulu Vet Center -->
+      <img src="images/honolulu-vaclinic.jpg" alt="Honolulu Vet Center" class="responsive-img img-medium" />
       <li><strong>Honolulu Vet Center:</strong> 1680 Kapiolani Boulevard, Suite F-3, Honolulu, HI 96814-3700</li>
       <li>Direct Line: <a href="tel:+18089738387">808-973-8387</a></li>
-      <li><a href="https://www.google.com/maps?q=1680+Kapiolani+Boulevard+Honolulu,+HI+96814-3700" target="_blank">Get directions on Google Maps</a></li>
-      
+      <li><a href="https://www.google.com/maps?q=1680+Kapiolani+Boulevard+Honolulu,+HI+96814-3700" target="_blank">Get
+          directions on Google Maps</a></li>
+
       <!-- Maui Vet Center -->
+       <img src="images/maui-vaclinic.jpg" alt="Maui Vet Center" class="responsive-img img-medium" />
       <li><strong>Maui Vet Center:</strong> 157 Ma'a Street, Kahului, HI 96732</li>
       <li>Direct Line: <a href="tel:+18082428557">808-242-8557</a></li>
-      <li><a href="https://www.google.com/maps?q=157+Ma'a+Street+Kahului,+HI+96732" target="_blank">Get directions on Google Maps</a></li>
-      
+      <li><a href="https://www.google.com/maps?q=157+Ma'a+Street+Kahului,+HI+96732" target="_blank">Get directions on
+          Google Maps</a></li>
+
       <!-- Kona Vet Center -->
+      <img src="images/kona-vaclinic.jpg" alt="Kona Vet Center" class="responsive-img img-medium" />
       <li><strong>Kona Vet Center:</strong> 73-4976 Kamanu Street, Suite 207, Kailua-Kona, HI 96740</li>
       <li>Direct Line: <a href="tel:+18083290574">808-329-0574</a></li>
-      <li><a href="https://www.google.com/maps?q=73-4976+Kamanu+Street+Kailua-Kona,+HI+96740" target="_blank">Get directions on Google Maps</a></li>
-      
+      <li><a href="https://www.google.com/maps?q=73-4976+Kamanu+Street+Kailua-Kona,+HI+96740" target="_blank">Get
+          directions on Google Maps</a></li>
+
       <!-- West Oahu Vet Center -->
+      <img src="images/west-oahu-vaclinics.jpg" alt="West Oahu Vet Center" class="responsive-img img-medium" />
       <li><strong>West Oahu Vet Center:</strong> 91-1051 Franklin D. Roosevelt Avenue, Kapolei, HI 96707</li>
       <li>Direct Line: <a href="tel:+18084585084">808-458-5084</a></li>
-      <li><a href="https://www.google.com/maps?q=91-1051+Franklin+D.+Roosevelt+Avenue+Kapolei,+HI+96707" target="_blank">Get directions on Google Maps</a></li>
-      
-      <!-- Kauai Vet Center -->
-      <li><strong>Kauai Vet Center:</strong> 4485 Pahe'e Street, Suite 101, Lihue, HI 96765</li>
-      <li>Direct Line: <a href="tel:+18082461163">808-246-1163</a></li>
-      <li><a href="https://www.google.com/maps?q=4485+Pahe'e+Street+Lihue,+HI+96765" target="_blank">Get directions on Google Maps</a></li>
+      <li><a href="https://www.google.com/maps?q=91-1051+Franklin+D.+Roosevelt+Avenue+Kapolei,+HI+96707"
+          target="_blank">Get directions on Google Maps</a></li>
+
     </ul>
 
     <h3>Services Offered:</h3>
@@ -216,41 +251,48 @@ body.home .welcome-text {
       <li>Dental Services</li>
       <li>Rehabilitation Services</li>
     </ul>
-    <p>For more details about the available services at each clinic, please reach out directly to the location you are interested in.</p>
-</section>
+    <p>For more details about the available services at each clinic, please reach out directly to the location you are
+      interested in.</p>
+  </section>
 
   <!-- About section that will be shown when "About" link is clicked -->
   <section id="about">
     <h2>About Us</h2>
-    
-    <p><strong>Aloha! We're Berylin Lau and Elora Tonaki</strong>, and we created this website to support Hawaiʻi's veterans community.</p>
-  
+
+    <p><strong>Aloha! We're Berylin Lau and Elora Tonaki</strong>, and we created this website to support Hawaiʻi's
+      veterans community.</p>
+
     <h3>The Challenges</h3>
-    <p>Hawaiʻi is home to a large number of veterans, many of whom face unique challenges — especially older veterans navigating a fast-changing digital world. These challenges often include:</p>
+    <p>Hawaiʻi is home to a large number of veterans, many of whom face unique challenges — especially older veterans
+      navigating a fast-changing digital world. These challenges often include:</p>
     <ul>
       <li>Geographical isolation</li>
       <li>Limited access to healthcare</li>
       <li>Financial struggles</li>
       <li>Mental health concerns</li>
     </ul>
-    <p>We recognize the importance of addressing these barriers and ensuring veterans have the support they need to thrive in Hawaiʻi.</p>
-  
+    <p>We recognize the importance of addressing these barriers and ensuring veterans have the support they need to
+      thrive in Hawaiʻi.</p>
+
     <h3>Our Mission</h3>
-    <p>Our mission is simple: to make it easier for veterans to access the services and resources they deserve. This site serves as a one-stop resource hub, where veterans can:</p>
+    <p>Our mission is simple: to make it easier for veterans to access the services and resources they deserve. This
+      site serves as a one-stop resource hub, where veterans can:</p>
     <ul>
       <li>Learn about VA benefits</li>
       <li>Access local healthcare services</li>
       <li>Connect with support programs</li>
     </ul>
-    <p>We aim to reduce the confusion and frustration often felt when navigating these essential services, offering straightforward information and easy access.</p>
-  
+    <p>We aim to reduce the confusion and frustration often felt when navigating these essential services, offering
+      straightforward information and easy access.</p>
+
     <h3>Why It Matters</h3>
-    <p>Our veterans have given so much for us, and it’s our turn to give back. We hope this site helps make the process a little simpler for them and reminds them that they’re not alone — and always appreciated.</p>
-  
+    <p>Our veterans have given so much for us, and it’s our turn to give back. We hope this site helps make the process
+      a little simpler for them and reminds them that they’re not alone — and always appreciated.</p>
+
     <p><strong>With gratitude and aloha,</strong><br>Berylin Lau & Elora Tonaki</p>
-    
+
     <p><i>“You’re not alone — and always appreciated.”</i></p>
-  </section>  
+  </section>
 
   <footer>
     <p>&copy; 2025 Hawaii Veterans Resource Center. All rights reserved.</p>
@@ -262,45 +304,54 @@ body.home .welcome-text {
       const homeTab = document.getElementById("home-tab");
       const clinicTab = document.getElementById("clinic-tab");
       const medicalCenterTab = document.getElementById("medical-center-tab");
+      const outpatientTab = document.getElementById("outpatient-tab");
       const aboutTab = document.getElementById("about-tab");
-  
+
       // Get section elements
       const homeSection = document.querySelector("main"); // Home section is the main element
       const clinicSection = document.getElementById("veteran-clinic");
       const medicalCenterSection = document.getElementById("veterans-medical-center");
+      const outpatientSection = document.getElementById("outpatient-care");
       const aboutSection = document.getElementById("about");
-  
+
       // Hide all sections
       function hideAllSections() {
         homeSection.style.display = "none";
         clinicSection.style.display = "none";
         medicalCenterSection.style.display = "none";
+        outpatientSection.style.display = "none";
         aboutSection.style.display = "none";
       }
-  
+
       // Show corresponding section when tab is clicked
       homeTab.addEventListener("click", function (e) {
         e.preventDefault();
         hideAllSections();
         homeSection.style.display = "block";
       });
-  
+
       clinicTab.addEventListener("click", function (e) {
         e.preventDefault();
         hideAllSections();
         clinicSection.style.display = "block";
       });
-  
+
       medicalCenterTab.addEventListener("click", function (e) {
         e.preventDefault();
         hideAllSections();
         medicalCenterSection.style.display = "block";
       });
-  
+
+      outpatientTab.addEventListener("click", function (e) {
+        e.preventDefault();
+        hideAllSections();
+        outpatientSection.style.display = "block";
+      });
+
       aboutTab.addEventListener("click", function (e) {
         e.preventDefault();
         hideAllSections();
         aboutSection.style.display = "block";
       });
     });
-  </script>  
+ </script>
