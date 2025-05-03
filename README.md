@@ -2,8 +2,6 @@
 
 # Hawaii Veterans Resource Directory
 
-This project is a single-page website that helps U.S. military veterans in Hawaii easily find essential healthcare services, including VA Medical Centers, Community-Based Outpatient Clinics, and Vet Centers.
-
 ## Purpose
 
 Hawaii has a significant veteran population; however, many veterans face challenges as they are often overlooked and underserved. With a wide range of ages—many being older; adjusting to the constantly changing real and digital world can be difficult. Key issues veterans face include geographical barriers, limited healthcare access, financial struggles, mental health challenges, and employment difficulties.
