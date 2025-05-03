@@ -8,7 +8,7 @@
 
 <style>
 body.home {
-  background-image: url('images/va-medical.jpg'); 
+  background-image: url('static/images/va-medical.jpg'); 
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -24,9 +24,7 @@ body.home main {
 
 </style>
 
-  <title>Bootstrap App</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +33,8 @@ body.home main {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
 
@@ -61,7 +60,7 @@ body.home main {
     <p>Select a category above to get started.</p>
 
   </main>
-</body>
+
 
   <!-- Veterans Medical Center section -->
   <section id="veterans-medical-center">
@@ -71,7 +70,7 @@ body.home main {
     These are the primary hubs for veteran healthcare, offering both <strong>short-term and long-term</strong> medical support.</p>
     <p>We are proud to support veterans through the VA Pacific Islands Health Care System, Spark M. Matsunaga Department
       of Veterans Affairs Medical Center.</p>
-      <img src="images/va-medicalcenter.jpg" alt="VA Pacific Islands Health Care Center" class="responsive-img img-medium" />
+      <img src="static/images/va-medicalcenter.jpg" alt="VA Pacific Islands Health Care Center" class="responsive-img img-medium" />
     
       <h3>Contact Information:</h3>
     <ul>
@@ -127,7 +126,7 @@ body.home main {
           
 
       <!-- Maui VA Outpatient Clinic -->
-       <img src="images/maui-outpatient.jpg" alt="Maui VA Outpatient Clinic" class="responsive-img img-medium" />
+       <img src="static/images/maui-outpatient.jpg" alt="Maui VA Outpatient Clinic" class="responsive-img img-medium" />
       <li><strong>Maui VA Outpatient Clinic:</strong> 203 Hoohana St #303, Kahului, HI 96732</li>
       <li>Direct Line: <a href="tel:+18082428557">808-242-8557</a></li>
       <li><a href="https://maps.app.goo.gl/AnCFVXtE7ZevhaF47" target="_blank">Get directions on
@@ -135,14 +134,14 @@ body.home main {
 
 
       <!-- Hilo VA Outpatient Clinic -->
-       <img src="images/hilo-outpatient.png" alt="Hilo VA Outpatient Clinic" class="responsive-img img-medium" />
+       <img src="static/images/hilo-outpatient.png" alt="Hilo VA Outpatient Clinic" class="responsive-img img-medium" />
       <li><strong>Hilo VA Outpatient Clinic:</strong> Professional Building, 45 Mohouli St, Hilo, HI 96720</li>
       <li>Direct Line: <a href="tel:+18089693833">808-969-3833</a></li>
       <li><a href="https://maps.app.goo.gl/2YS7WmWsgohkFq757" target="_blank">Get directions on
           Google Maps</a></li>
 
       <!-- Lihue VA Outpatient Clinic -->
-        <img src="images/lihue-outpatient.jpg" alt="Lihue VA Outpatient Clinic" class="responsive-img img-medium" />
+        <img src="static/images/lihue-outpatient.jpg" alt="Lihue VA Outpatient Clinic" class="responsive-img img-medium" />
       <li><strong>Lihue VA Outpatient Clinic:</strong> 4473 Pahe'e St, Lihue, HI 96766</li>
       <li>Direct Line: <a href="tel:+18082461163">808-246-1163</a></li>
       <li><a href="https://www.google.com/maps?q=4485+Pahe'e+Street+Lihue,+HI+96765" target="_blank">Get directions on
@@ -151,7 +150,7 @@ body.home main {
 
 
       <!-- Molokai VA Community-Based Outpatient Clinic -->
-      <img src="images/molokai-outpatient.jpg" alt="Molokai VA Outpatient Clinic" class="responsive-img img-large" /> 
+      <img src="static/images/molokai-outpatient.jpg" alt="Molokai VA Outpatient Clinic" class="responsive-img img-large" /> 
       <li><strong>Molokai VA Outpatient Clinic:</strong> 280 Home Olu Pl, Kaunakakai, HI 96748</li>
       <li>Direct Line: <a href="tel:+18082461163">808-246-1163</a></li>
       <li><a href="https://maps.app.goo.gl/VChMN4qn1gW8FHxQ9" target="_blank">Get directions on
@@ -160,7 +159,7 @@ body.home main {
     
 
       <!-- Kona Community-Based Outpatient Clinic -->
-      <img src="images/kona-outpatient.jpg" alt="Kona Community-Based Outpatient Clinic" class="responsive-img img-medium" />
+      <img src="static/images/kona-outpatient.jpg" alt="Kona Community-Based Outpatient Clinic" class="responsive-img img-medium" />
       <li><strong>Kona Community-Based Outpatient Clinic:</strong> 73-4976 Kamanu St, Kailua-Kona, HI 96740</li>
       <li>Direct Line: <a href="tel:+18083290574">808-329-0574</a></li>
       <li><a href="https://www.google.com/maps?q=73-4976+Kamanu+St,+Kailua-Kona,+HI+96740" target="_blank">Get
@@ -168,7 +167,7 @@ body.home main {
 
 
       <!-- Leeward Community-Based Outpatient Clinic -->
-      <img src="images/ewabeach-outpatient.jpg" alt="Leeward Community-Based Outpatient Clinic" class="responsive-img img-medium" />
+      <img src="static/images/ewabeach-outpatient.jpg" alt="Leeward Community-Based Outpatient Clinic" class="responsive-img img-medium" />
       <li><strong>Leeward Community-Based Outpatient Clinic:</strong> 91-2139 Fort Weaver Rd, Ewa Beach, HI 96706</li>
       <li>Direct Line: <a href="tel:+18084585084">808-458-5084</a></li>
       <li><a href="https://www.google.com/maps?q=91-2139+Fort+Weaver+Rd,+Ewa+Beach,+HI+96706" target="_blank">Get
@@ -207,35 +206,35 @@ body.home main {
     <ul>
 
       <!-- Hilo Vet Center -->
-      <img src="images/hilo-vaclinic.jpg" alt="Hilo Vet Center" class="responsive-img img-medium" />
+      <img src="static/images/hilo-vaclinic.jpg" alt="Hilo Vet Center" class="responsive-img img-medium" />
       <li><strong>Hilo Vet Center:</strong> 70 Lanihuli Street, Suite 102, Hilo, HI 96720</li>
       <li>Direct Line: <a href="tel:+18089693833">808-969-3833</a></li>
       <li><a href="https://www.google.com/maps?q=70+Lanihuli+Street+Hilo,+HI+96720" target="_blank">Get directions on
           Google Maps</a></li>
 
       <!-- Honolulu Vet Center -->
-      <img src="images/honolulu-vaclinic.jpg" alt="Honolulu Vet Center" class="responsive-img img-medium" />
+      <img src="static/images/honolulu-vaclinic.jpg" alt="Honolulu Vet Center" class="responsive-img img-medium" />
       <li><strong>Honolulu Vet Center:</strong> 1680 Kapiolani Boulevard, Suite F-3, Honolulu, HI 96814-3700</li>
       <li>Direct Line: <a href="tel:+18089738387">808-973-8387</a></li>
       <li><a href="https://www.google.com/maps?q=1680+Kapiolani+Boulevard+Honolulu,+HI+96814-3700" target="_blank">Get
           directions on Google Maps</a></li>
 
       <!-- Maui Vet Center -->
-       <img src="images/maui-vaclinic.jpg" alt="Maui Vet Center" class="responsive-img img-medium" />
+       <img src="static/images/maui-vaclinic.jpg" alt="Maui Vet Center" class="responsive-img img-medium" />
       <li><strong>Maui Vet Center:</strong> 157 Ma'a Street, Kahului, HI 96732</li>
       <li>Direct Line: <a href="tel:+18082428557">808-242-8557</a></li>
       <li><a href="https://www.google.com/maps?q=157+Ma'a+Street+Kahului,+HI+96732" target="_blank">Get directions on
           Google Maps</a></li>
 
       <!-- Kona Vet Center -->
-      <img src="images/kona-vaclinic.jpg" alt="Kona Vet Center" class="responsive-img img-medium" />
+      <img src="static/images/kona-vaclinic.jpg" alt="Kona Vet Center" class="responsive-img img-medium" />
       <li><strong>Kona Vet Center:</strong> 73-4976 Kamanu Street, Suite 207, Kailua-Kona, HI 96740</li>
       <li>Direct Line: <a href="tel:+18083290574">808-329-0574</a></li>
       <li><a href="https://www.google.com/maps?q=73-4976+Kamanu+Street+Kailua-Kona,+HI+96740" target="_blank">Get
           directions on Google Maps</a></li>
 
       <!-- West Oahu Vet Center -->
-      <img src="images/west-oahu-vaclinics.jpg" alt="West Oahu Vet Center" class="responsive-img img-medium" />
+      <img src="static/images/west-oahu-vaclinics.jpg" alt="West Oahu Vet Center" class="responsive-img img-medium" />
       <li><strong>West Oahu Vet Center:</strong> 91-1051 Franklin D. Roosevelt Avenue, Kapolei, HI 96707</li>
       <li>Direct Line: <a href="tel:+18084585084">808-458-5084</a></li>
       <li><a href="https://www.google.com/maps?q=91-1051+Franklin+D.+Roosevelt+Avenue+Kapolei,+HI+96707"
@@ -293,7 +292,7 @@ body.home main {
 
     <p><i>“You’re not alone — and always appreciated.”</i></p>
   </section>
-
+</body>
   <footer>
     <p>&copy; 2025 Hawaii Veterans Resource Center. All rights reserved.</p>
   </footer>
